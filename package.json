@@ -1,0 +1,68 @@
+{
+  "name": "portfolio-profissional",
+  "version": "1.0.0",
+  "description": "Portfólio web profissional desenvolvido com HTML5, CSS3 e JavaScript puro",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "dev": "live-server --port=3000 --open=/",
+    "build": "npm run build:css && npm run build:js && npm run build:html",
+    "build:css": "tailwindcss -i ./assets/css/custom.css -o ./dist/css/main.css --minify",
+    "build:js": "terser assets/js/*.js -o dist/js/main.min.js",
+    "build:html": "cp index.html dist/ && cp -r assets dist/",
+    "build:gh-pages": "npm run build && cp .nojekyll dist/",
+    "lint:css": "stylelint 'assets/css/**/*.css'",
+    "lint:js": "eslint 'assets/js/**/*.js'",
+    "format": "prettier --write '**/*.{html,css,js,md}'",
+    "optimize:images": "imagemin assets/images/* --out-dir=dist/images",
+    "deploy": "npm run build:gh-pages && npm run optimize:images",
+    "deploy:gh": "npm run build:gh-pages && gh-pages -d dist"
+  },
+  "keywords": [
+    "portfolio",
+    "html5",
+    "css3",
+    "javascript",
+    "responsive",
+    "web-design",
+    "frontend",
+    "developer"
+  ],
+  "author": "Seu Nome <seu.email@exemplo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seu-usuario/portfolio/issues"
+  },
+  "homepage": "https://github.com/seu-usuario/portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.45.0",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^3.0.0",
+    "serve": "^14.2.0",
+    "gh-pages": "^6.1.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "tailwindcss": "^3.3.6",
+    "terser": "^5.18.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

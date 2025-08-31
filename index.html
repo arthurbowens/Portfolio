@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional - Desenvolvedor Web Full Stack">
+    <meta name="keywords" content="portfólio, desenvolvedor, web, frontend, backend">
+    <meta name="author" content="Arthur Bowens Sequeira">
+    
+    <title>Portfólio Profissional</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#inicio" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
+                    Portfolio
+                </a>
+                
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#inicio" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Início</a></li>
+                    <li><a href="#sobre" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Sobre</a></li>
+                    <li><a href="#servicos" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Serviços</a></li>
+                    <li><a href="#projetos" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Projetos</a></li>
+                    <li><a href="#contato" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contato</a></li>
+                </ul>
+                
+                <button class="md:hidden flex flex-col space-y-1" aria-label="Abrir menu">
+                    <span class="w-6 h-0.5 bg-gray-600"></span>
+                    <span class="w-6 h-0.5 bg-gray-600"></span>
+                    <span class="w-6 h-0.5 bg-gray-600"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="min-h-screen flex items-center bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+            <div class="container mx-auto px-4 py-20">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-16">
+                    <div class="flex-1 text-center lg:text-left space-y-8">
+                        <div class="space-y-4">
+                            <p class="text-lg font-medium text-blue-600 tracking-wide uppercase">Bem-vindo ao meu portfólio</p>
+                            <h1 class="text-5xl md:text-7xl font-bold text-slate-800 leading-tight">
+                                Arthur Bowens<br>
+                                <span class="text-slate-800">Sequeira</span>
+                            </h1>
+                        </div>
+                        
+                        <p class="text-xl text-slate-600 max-w-2xl leading-relaxed">
+                            Desenvolvedor Full Stack com foco em Java Spring Boot, 
+                            Angular e React Native para aplicações web e mobile.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <a href="#projetos" class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                <span>Ver Projetos</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="#contato" class="inline-flex items-center justify-center px-8 py-4 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                                <span>Entre em Contato</span>
+                                <i class="fas fa-envelope ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex-1 flex justify-center">
+                        <div class="relative">
+                            <div class="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl border-8 border-white/80 bg-gradient-to-br from-blue-100 to-indigo-100">
+                                <img src="assets/images/avatar.jpg" alt="Arthur Bowens Sequeira - Desenvolvedor Full Stack" class="w-full h-full object-cover">
+                            </div>
+                            <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center shadow-lg">
+                                <i class="fas fa-code text-white text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Perfil Profissional</h2>
+                    <p class="text-xl text-gray-600">Especialização e competências técnicas</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="prose prose-lg mx-auto mb-12">
+                        <p class="text-gray-700 mb-6">
+                            Desenvolvedor de software com formação em Análise e Desenvolvimento de Sistemas pela Faculdade SENAC Florianópolis, 
+                            especializado no desenvolvimento de aplicações enterprise com arquitetura robusta e escalável.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            <strong>Backend:</strong> Desenvolvo APIs RESTful utilizando Java Spring Boot, implementando autenticação JWT, 
+                            segurança SSL/TLS, e integração com bancos relacionais MySQL. Experiência com Spring Security, JPA/Hibernate, 
+                            Jakarta Validation e implementação de padrões de projeto para aplicações de alta performance.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            <strong>Frontend:</strong> Desenvolvimento de interfaces responsivas com Angular, utilizando componentes standalone, 
+                            formulários reativos, e integração com serviços backend. Implementação de arquitetura modular e reutilizável 
+                            seguindo as melhores práticas do framework.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            <strong>Mobile:</strong> Desenvolvimento de aplicações nativas multiplataforma com React Native e Expo, 
+                            incluindo planejamento de arquitetura, implementação de funcionalidades complexas e preparação para 
+                            publicação nas lojas de aplicativos.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            <strong>Experiência Profissional:</strong> Atuação em suporte técnico na Prefeitura Municipal de São José, 
+                            desenvolvendo habilidades de resolução de problemas, comunicação técnica e atendimento ao usuário final.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-8">Minhas Habilidades</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6">
+                            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors">
+                                <i class="fab fa-java text-4xl text-orange-600 mb-2"></i>
+                                <span class="font-medium text-gray-700">Java</span>
+                            </div>
+                            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-green-50 transition-colors">
+                                <i class="fas fa-leaf text-4xl text-green-600 mb-2"></i>
+                                <span class="font-medium text-gray-700">Spring Boot</span>
+                            </div>
+                            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-red-50 transition-colors">
+                                <i class="fab fa-angular text-4xl text-red-600 mb-2"></i>
+                                <span class="font-medium text-gray-700">Angular</span>
+                            </div>
+                            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors">
+                                <i class="fab fa-react text-4xl text-blue-600 mb-2"></i>
+                                <span class="font-medium text-gray-700">React Native</span>
+                            </div>
+                            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors">
+                                <i class="fas fa-database text-4xl text-blue-600 mb-2"></i>
+                                <span class="font-medium text-gray-700">MySQL</span>
+                            </div>
+                            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-orange-50 transition-colors">
+                                <i class="fab fa-git-alt text-4xl text-orange-600 mb-2"></i>
+                                <span class="font-medium text-gray-700">Git</span>
+                            </div>
+                            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-purple-50 transition-colors">
+                                <i class="fab fa-figma text-4xl text-purple-600 mb-2"></i>
+                                <span class="font-medium text-gray-700">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Meus Serviços</h2>
+                    <p class="text-xl text-gray-600">O que posso fazer por você</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-server text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Desenvolvimento Backend</h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            Criação de APIs RESTful com Java Spring Boot, incluindo autenticação JWT, 
+                            segurança SSL/TLS e integração com bancos de dados MySQL.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-mobile-alt text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Desenvolvimento Mobile</h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            Desenvolvimento de aplicações móveis com React Native e Expo, 
+                            desde o planejamento até a publicação nas lojas de aplicativos.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow md:col-span-2 lg:col-span-1">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-code text-2xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Desenvolvimento Frontend</h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            Criação de interfaces web responsivas com Angular, incluindo componentes standalone, 
+                            formulários reativos e integração com serviços backend.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Meus Projetos</h2>
+                    <p class="text-xl text-gray-600">Alguns dos trabalhos que realizei</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+                        <div class="h-48 bg-gray-200">
+                            <img src="assets/images/projeto1.jpg" alt="Projeto Pombo" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Pombo - Microblog</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                Aplicação de microblog com envio de mensagens, sistema de likes, denúncias, 
+                                bloqueios e painel administrativo completo.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Java</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Spring Boot</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">MySQL</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 bg-blue-600 text-white text-center py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">Ver Demo</a>
+                                <a href="#" class="flex-1 border border-blue-600 text-blue-600 text-center py-2 px-4 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">Código</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+                        <div class="h-48 bg-gray-200">
+                            <img src="assets/images/projeto2.jpg" alt="Projeto Validata" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Validata - Gestão de Validade</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                Sistema de gestão de validade de produtos, fornecedores e usuários com 
+                                APIs REST, validações e consultas filtradas.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Java</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Spring Security</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">JPA/Hibernate</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 bg-blue-600 text-white text-center py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">Ver Demo</a>
+                                <a href="#" class="flex-1 border border-blue-600 text-blue-600 text-center py-2 px-4 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">Código</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+                        <div class="h-48 bg-gray-200">
+                            <img src="assets/images/projeto3.jpg" alt="Projeto Finanças Pessoais" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">App de Finanças Pessoais</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                Aplicação móvel para controle de finanças pessoais desenvolvida com React Native 
+                                e Expo, planejada para publicação na Play Store.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">React Native</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">Expo</span>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">JavaScript</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 bg-blue-600 text-white text-center py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">Ver Demo</a>
+                                <a href="#" class="flex-1 border border-blue-600 text-blue-600 text-center py-2 px-4 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">Código</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                </div>
+                
+                <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Informações de Contato</h3>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <span class="text-gray-700">arthurbowens18@gmail.com</span>
+                        </div>
+                        
+                        <div class="flex space-x-4 pt-4">
+                            <a href="https://linkedin.com/in/arthurbowens" target="_blank" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="https://github.com/arthurbowens" target="_blank" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-900 transition-colors" aria-label="GitHub">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="https://instagram.com/bowens_arthur17" target="_blank" class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition-colors" aria-label="Instagram">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="space-y-6" id="formularioContato">
+                        <div>
+                            <label for="nome" class="block text-sm font-medium text-gray-700 mb-2">Nome</label>
+                            <input type="text" id="nome" name="nome" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">E-mail</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                        
+                        <div>
+                            <label for="assunto" class="block text-sm font-medium text-gray-700 mb-2">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                        
+                        <div>
+                            <label for="mensagem" class="block text-sm font-medium text-gray-700 mb-2">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50 hidden" id="botaoTopo" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navegacao.js"></script>
+    <script src="assets/js/animacoes.js"></script>
+    <script src="assets/js/formulario.js"></script>
+</body>
+</html>
