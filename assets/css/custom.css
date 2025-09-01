@@ -1,3 +1,180 @@
+/* Estilos personalizados para complementar o Tailwind CSS */
+
+/* Animações customizadas */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Modal de demonstração - Z-INDEX ALTO */
+#validata-demo-modal {
+    animation: fadeIn 0.3s ease-out;
+    z-index: 9999 !important;
+    position: fixed !important;
+}
+
+#validata-demo-modal .bg-white {
+    animation: scaleIn 0.3s ease-out;
+    position: relative;
+    z-index: 10000;
+}
+
+/* Garantir que o modal fique sempre por cima */
+#validata-demo-modal * {
+    position: relative;
+}
+
+/* Botões de navegação das telas */
+.demo-nav-btn {
+    transition: all 0.2s ease-in-out;
+    min-width: 60px;
+}
+
+.demo-nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.demo-nav-btn.bg-blue-600 {
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+/* Imagem da demonstração */
+#demo-image {
+    transition: all 0.3s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+
+#demo-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Botões de navegação anterior/próximo */
+#prev-screen, #next-screen {
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+#prev-screen:hover, #next-screen:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Indicador de tela atual */
+#current-screen-number {
+    animation: pulse 2s infinite;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    #validata-demo-modal .max-w-7xl {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+        max-height: 98vh;
+    }
+    
+    .demo-nav-btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+        min-width: 50px;
+    }
+    
+    #demo-image {
+        max-width: 100%;
+        height: auto;
+        max-height: 50vh !important;
+    }
+    
+    #validata-demo-modal .p-6 {
+        padding: 1rem;
+    }
+    
+    #validata-demo-modal .text-2xl {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .demo-nav-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.7rem;
+        min-width: 45px;
+    }
+    
+    #demo-image {
+        max-height: 40vh !important;
+    }
+}
+
+/* Transições suaves para mudança de tela */
+#screen-title, #screen-description {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Efeito de loading para mudança de imagem */
+#demo-image.loading {
+    opacity: 0.7;
+    filter: blur(1px);
+}
+
+/* Scrollbar personalizada para o modal */
+#validata-demo-modal .overflow-y-auto::-webkit-scrollbar {
+    width: 8px;
+}
+
+#validata-demo-modal .overflow-y-auto::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#validata-demo-modal .overflow-y-auto::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+#validata-demo-modal .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Gradientes e sombras personalizadas */
+.bg-gradient-to-r.from-blue-600.to-purple-600 {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+}
+
+/* Efeitos de hover para elementos interativos */
+#close-validata-modal:hover {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animações para elementos que entram na tela */
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -9,82 +186,66 @@
     }
 }
 
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
+/* Estados de foco para acessibilidade */
+.demo-nav-btn:focus,
+#prev-screen:focus,
+#next-screen:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Transições para mudanças de estado */
+.transition-all {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efeitos de profundidade */
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Melhorias de contraste para acessibilidade */
+.text-blue-100 {
+    color: #dbeafe;
+}
+
+/* Efeitos de hover para cards */
+.hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Estilos específicos para o modal */
+#validata-demo-modal {
+    backdrop-filter: blur(5px);
+}
+
+#validata-demo-modal .bg-white {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Melhorias para navegação responsiva */
+@media (max-width: 640px) {
+    .demo-nav-btn {
+        flex: 1;
+        text-align: center;
     }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.animate-fade-in-up {
-    animation: fadeInUp 0.6s ease-out;
-}
-
-.animate-slide-in-left {
-    animation: slideInLeft 0.6s ease-out;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.hover-lift {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hover-lift:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.gradient-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.gradient-secondary {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.text-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.mobile-hidden {
-    display: none;
-}
-
-@media (min-width: 1024px) {
-    .mobile-hidden {
-        display: block;
+    
+    #validata-demo-modal .flex.flex-wrap {
+        gap: 0.25rem;
     }
 }
 
-.desktop-only {
-    display: none;
+/* Garantir que o header não seja sobreposto */
+header {
+    z-index: 50 !important;
 }
 
-@media (min-width: 1024px) {
-    .desktop-only {
-        display: block;
-    }
+/* Forçar z-index alto para todos os elementos do modal */
+#validata-demo-modal,
+#validata-demo-modal * {
+    z-index: 9999 !important;
+}
+
+#validata-demo-modal .bg-white {
+    z-index: 10000 !important;
 }

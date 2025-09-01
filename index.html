@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="bg-white shadow-md sticky top-0 z-[50]">
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <a href="#inicio" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
@@ -115,8 +115,8 @@
                         </p>
                         <p class="text-gray-700 mb-6">
                             <strong>Mobile:</strong> Desenvolvimento de aplicações nativas multiplataforma com React Native e Expo, 
-                            incluindo planejamento de arquitetura, implementação de funcionalidades complexas e preparação para 
-                            publicação nas lojas de aplicativos.
+                            incluindo planejamento de arquitetura, implementação de funcionalidades complexas, 
+                            desenvolvimento de componentes reutilizáveis e otimização de performance para dispositivos móveis.
                         </p>
                         <p class="text-gray-700 mb-6">
                             <strong>Experiência Profissional:</strong> Atuação em suporte técnico na Prefeitura Municipal de São José, 
@@ -126,7 +126,7 @@
                     
                     <div class="text-center">
                         <h3 class="text-2xl font-bold text-gray-800 mb-8">Minhas Habilidades</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6">
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-6">
                             <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors">
                                 <i class="fab fa-java text-4xl text-orange-600 mb-2"></i>
                                 <span class="font-medium text-gray-700">Java</span>
@@ -146,6 +146,10 @@
                             <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors">
                                 <i class="fas fa-database text-4xl text-blue-600 mb-2"></i>
                                 <span class="font-medium text-gray-700">MySQL</span>
+                            </div>
+                            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-blue-50 transition-colors">
+                                <img src="assets/images/validata-demo/typescript.png" alt="TypeScript" class="w-10 h-10 mb-2">
+                                <span class="font-medium text-gray-700">TypeScript</span>
                             </div>
                             <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-orange-50 transition-colors">
                                 <i class="fab fa-git-alt text-4xl text-orange-600 mb-2"></i>
@@ -187,7 +191,8 @@
                         <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Desenvolvimento Mobile</h3>
                         <p class="text-gray-600 text-center leading-relaxed">
                             Desenvolvimento de aplicações móveis com React Native e Expo, 
-                            desde o planejamento até a publicação nas lojas de aplicativos.
+                            desde o planejamento até a implementação de funcionalidades avançadas 
+                            e otimização para diferentes dispositivos.
                         </p>
                     </div>
                     
@@ -237,7 +242,7 @@
                     
                     <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
                         <div class="h-48 bg-gray-200">
-                            <img src="assets/images/projeto2.jpg" alt="Projeto Validata" class="w-full h-full object-cover">
+                            <img src="assets/images/validata-demo/print 4 validata.png" alt="Projeto Validata" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-3">Validata - Gestão de Validade</h3>
@@ -247,12 +252,13 @@
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Java</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Spring Security</span>
-                                <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">JPA/Hibernate</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Spring Boot</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">Angular</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">TypeScript</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">MySQL</span>
                             </div>
                             <div class="flex gap-3">
-                                <a href="#" class="flex-1 bg-blue-600 text-white text-center py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">Ver Demo</a>
-                                <a href="#" class="flex-1 border border-blue-600 text-blue-600 text-center py-2 px-4 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">Código</a>
+                                <button id="validata-demo-btn" class="w-full bg-blue-600 text-white text-center py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">Ver Demo</button>
                             </div>
                         </div>
                     </article>
@@ -265,7 +271,7 @@
                             <h3 class="text-xl font-bold text-gray-800 mb-3">App de Finanças Pessoais</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">
                                 Aplicação móvel para controle de finanças pessoais desenvolvida com React Native 
-                                e Expo, planejada para publicação na Play Store.
+                                e Expo, incluindo funcionalidades de controle de receitas, despesas e relatórios financeiros.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">React Native</span>
@@ -282,6 +288,83 @@
             </div>
         </section>
 
+    <!-- Modal de Demonstração Validata -->
+    <div id="validata-demo-modal" class="fixed inset-0 bg-black bg-opacity-75 z-[9999] hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-2xl shadow-2xl w-full max-w-7xl max-h-[95vh] overflow-y-auto">
+                <!-- Header do Modal -->
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 sticky top-0">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold">Sistema Validata - Demonstração</h3>
+                            <p class="text-blue-100 mt-1">Sistema de Gestão de Validade de Produtos</p>
+                        </div>
+                        <button id="close-validata-modal" class="text-white hover:text-blue-200 transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Conteúdo do Modal -->
+                <div class="p-6">
+                    <!-- Navegação das Telas -->
+                    <div class="flex justify-center mb-6">
+                        <div class="flex flex-wrap gap-2 bg-gray-100 p-3 rounded-xl">
+                                                       <button class="demo-nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-all bg-gray-200 text-gray-700" data-screen="1">Tela 1</button>
+                           <button class="demo-nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-all bg-gray-200 text-gray-700" data-screen="2">Tela 2</button>
+                           <button class="demo-nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-all bg-gray-200 text-gray-700" data-screen="3">Tela 3</button>
+                           <button class="demo-nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-all bg-gray-200 text-gray-700" data-screen="4">Tela 4</button>
+                           <button class="demo-nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-all bg-gray-200 text-gray-700" data-screen="5">Tela 5</button>
+                           <button class="demo-nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-all bg-gray-200 text-gray-700" data-screen="6">Tela 6</button>
+                           <button class="demo-nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-all bg-gray-200 text-gray-700" data-screen="7">Tela 7</button>
+                           <button class="demo-nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-all bg-gray-200 text-gray-700" data-screen="8">Tela 8</button>
+                           <button class="demo-nav-btn px-3 py-2 rounded-lg text-sm font-medium transition-all bg-gray-200 text-gray-700" data-screen="9">Tela 9</button>
+                        </div>
+                    </div>
+
+                    <!-- Área da Imagem -->
+                    <div class="flex justify-center mb-6">
+                        <div class="relative max-w-full">
+                            <img id="demo-image" src="assets/images/validata-demo/print 1 validata.png" alt="Tela do Sistema Validata" class="max-w-full h-auto rounded-lg shadow-lg border-4 border-gray-200" style="max-height: 70vh;">
+                                                           <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                                   <span id="current-screen-number">1</span> de 9
+                               </div>
+                        </div>
+                    </div>
+
+                    <!-- Explicação da Tela -->
+                    <div class="bg-gray-50 rounded-xl p-6 mb-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3" id="screen-title">Tela de Login - Autenticação e Segurança</h4>
+                        <div class="text-gray-700 space-y-3" id="screen-description">
+                            <p><strong>Funcionalidade:</strong> Sistema de autenticação seguro com validação de credenciais e controle de acesso.</p>
+                            <p><strong>Tecnologias:</strong> Spring Security, JWT (JSON Web Tokens), validação com Jakarta Validation.</p>
+                            <p><strong>Recursos:</strong> Criptografia de senhas, sessões seguras, controle de tentativas de login e auditoria de acessos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Navegação Anterior/Próximo -->
+                    <div class="flex justify-between">
+                        <button id="prev-screen" class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                            <span>Anterior</span>
+                        </button>
+                        <button id="next-screen" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center space-x-2">
+                            <span>Próximo</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Contato -->
         <section id="contato" class="py-20 bg-gray-50">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
@@ -341,7 +424,7 @@
         </section>
     </main>
 
-    <button class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50 hidden" id="botaoTopo" aria-label="Voltar ao topo">
+    <button class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors z-[100] hidden" id="botaoTopo" aria-label="Voltar ao topo">
         <i class="fas fa-arrow-up"></i>
     </button>
 
@@ -349,5 +432,6 @@
     <script src="assets/js/navegacao.js"></script>
     <script src="assets/js/animacoes.js"></script>
     <script src="assets/js/formulario.js"></script>
+    <script src="assets/js/validata-demo.js"></script>
 </body>
 </html>
